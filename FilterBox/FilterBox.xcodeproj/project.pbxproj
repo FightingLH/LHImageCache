@@ -15,6 +15,9 @@
 		79801D6220AC0BD10008732B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79801D6120AC0BD10008732B /* main.m */; };
 		79801D6C20AC0BD10008732B /* FilterBoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79801D6B20AC0BD10008732B /* FilterBoxTests.m */; };
 		79801D7720AC0BD10008732B /* FilterBoxUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79801D7620AC0BD10008732B /* FilterBoxUITests.m */; };
+		79801D8A20AC0CEE0008732B /* FilterBoxModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79801D8920AC0CEE0008732B /* FilterBoxModel.m */; };
+		79801D8D20AC0EFA0008732B /* FilterBoxViewMlodel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79801D8C20AC0EFA0008732B /* FilterBoxViewMlodel.m */; };
+		79801D9020AC13B50008732B /* FilterBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79801D8F20AC13B50008732B /* FilterBoxView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		79801D7220AC0BD10008732B /* FilterBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilterBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79801D7620AC0BD10008732B /* FilterBoxUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterBoxUITests.m; sourceTree = "<group>"; };
 		79801D7820AC0BD10008732B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79801D8820AC0CEE0008732B /* FilterBoxModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterBoxModel.h; sourceTree = "<group>"; };
+		79801D8920AC0CEE0008732B /* FilterBoxModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterBoxModel.m; sourceTree = "<group>"; };
+		79801D8B20AC0EFA0008732B /* FilterBoxViewMlodel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterBoxViewMlodel.h; sourceTree = "<group>"; };
+		79801D8C20AC0EFA0008732B /* FilterBoxViewMlodel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterBoxViewMlodel.m; sourceTree = "<group>"; };
+		79801D8E20AC13B50008732B /* FilterBoxView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterBoxView.h; sourceTree = "<group>"; };
+		79801D8F20AC13B50008732B /* FilterBoxView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterBoxView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,10 @@
 		79801D5120AC0BD10008732B /* FilterBox */ = {
 			isa = PBXGroup;
 			children = (
+				79801D8520AC0CA40008732B /* Controller */,
+				79801D8420AC0CA40008732B /* Model */,
+				79801D8720AC0CA40008732B /* View */,
+				79801D8620AC0CA40008732B /* ViewModel */,
 				79801D5220AC0BD10008732B /* AppDelegate.h */,
 				79801D5320AC0BD10008732B /* AppDelegate.m */,
 				79801D5520AC0BD10008732B /* ViewController.h */,
@@ -130,6 +143,40 @@
 				79801D7820AC0BD10008732B /* Info.plist */,
 			);
 			path = FilterBoxUITests;
+			sourceTree = "<group>";
+		};
+		79801D8420AC0CA40008732B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79801D8820AC0CEE0008732B /* FilterBoxModel.h */,
+				79801D8920AC0CEE0008732B /* FilterBoxModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		79801D8520AC0CA40008732B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		79801D8620AC0CA40008732B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				79801D8B20AC0EFA0008732B /* FilterBoxViewMlodel.h */,
+				79801D8C20AC0EFA0008732B /* FilterBoxViewMlodel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		79801D8720AC0CA40008732B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				79801D8E20AC13B50008732B /* FilterBoxView.h */,
+				79801D8F20AC13B50008732B /* FilterBoxView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +315,9 @@
 				79801D5720AC0BD10008732B /* ViewController.m in Sources */,
 				79801D6220AC0BD10008732B /* main.m in Sources */,
 				79801D5420AC0BD10008732B /* AppDelegate.m in Sources */,
+				79801D8A20AC0CEE0008732B /* FilterBoxModel.m in Sources */,
+				79801D9020AC13B50008732B /* FilterBoxView.m in Sources */,
+				79801D8D20AC0EFA0008732B /* FilterBoxViewMlodel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
