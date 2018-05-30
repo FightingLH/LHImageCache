@@ -18,6 +18,8 @@
 		79801D8A20AC0CEE0008732B /* FilterBoxModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79801D8920AC0CEE0008732B /* FilterBoxModel.m */; };
 		79801D8D20AC0EFA0008732B /* FilterBoxViewMlodel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79801D8C20AC0EFA0008732B /* FilterBoxViewMlodel.m */; };
 		79801D9020AC13B50008732B /* FilterBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79801D8F20AC13B50008732B /* FilterBoxView.m */; };
+		7984EF6B20AE63E2009AE1D7 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7984EF6A20AE63E2009AE1D7 /* WebViewController.m */; };
+		7984EF6D20AE765C009AE1D7 /* JSPOST.html in Resources */ = {isa = PBXBuildFile; fileRef = 7984EF6C20AE765C009AE1D7 /* JSPOST.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,9 @@
 		79801D8C20AC0EFA0008732B /* FilterBoxViewMlodel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterBoxViewMlodel.m; sourceTree = "<group>"; };
 		79801D8E20AC13B50008732B /* FilterBoxView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterBoxView.h; sourceTree = "<group>"; };
 		79801D8F20AC13B50008732B /* FilterBoxView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterBoxView.m; sourceTree = "<group>"; };
+		7984EF6920AE63E2009AE1D7 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		7984EF6A20AE63E2009AE1D7 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		7984EF6C20AE765C009AE1D7 /* JSPOST.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = JSPOST.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +123,9 @@
 				79801D5320AC0BD10008732B /* AppDelegate.m */,
 				79801D5520AC0BD10008732B /* ViewController.h */,
 				79801D5620AC0BD10008732B /* ViewController.m */,
+				7984EF6920AE63E2009AE1D7 /* WebViewController.h */,
+				7984EF6A20AE63E2009AE1D7 /* WebViewController.m */,
+				7984EF6C20AE765C009AE1D7 /* JSPOST.html */,
 				79801D5820AC0BD10008732B /* Main.storyboard */,
 				79801D5B20AC0BD10008732B /* Assets.xcassets */,
 				79801D5D20AC0BD10008732B /* LaunchScreen.storyboard */,
@@ -286,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79801D5F20AC0BD10008732B /* LaunchScreen.storyboard in Resources */,
+				7984EF6D20AE765C009AE1D7 /* JSPOST.html in Resources */,
 				79801D5C20AC0BD10008732B /* Assets.xcassets in Resources */,
 				79801D5A20AC0BD10008732B /* Main.storyboard in Resources */,
 			);
@@ -313,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79801D5720AC0BD10008732B /* ViewController.m in Sources */,
+				7984EF6B20AE63E2009AE1D7 /* WebViewController.m in Sources */,
 				79801D6220AC0BD10008732B /* main.m in Sources */,
 				79801D5420AC0BD10008732B /* AppDelegate.m in Sources */,
 				79801D8A20AC0CEE0008732B /* FilterBoxModel.m in Sources */,

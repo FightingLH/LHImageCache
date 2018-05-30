@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+            //调用格式： post('URL', {'key': 'value'});
+            function post(path, params) {
+                var method = "post";
+                var form = document.createElement("form");
+                form.setAttribute("method", method);
+                form.setAttribute("action", path);
+                
+                var hiddenField = document.createElement("input");
+                hiddenField.setAttribute("type", "hidden");
+                hiddenField.setAttribute("name", "jsonRequestData");
+                hiddenField.setAttribute("value", params);
+                
+                form.appendChild(hiddenField);
+                
+                document.body.appendChild(form);
+                form.submit();
+            }
+        </script>
+    </head>
+    <body>
+    </body>

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface FilterBoxView : UIView
-
++ (FilterBoxView *)showBoxWithModel:(id)model;
 @end

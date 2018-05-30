@@ -9,47 +9,37 @@
 #import "ViewController.h"
 #import "FilterBoxViewMlodel.h"
 #import "FilterBoxView.h"
+#import "WebViewController.h"
 
 @interface ViewController ()
 
-@property  (nonatomic,  strong) FilterBoxViewMlodel *ViewModel;
-@property  (nonatomic,  strong) FilterBoxView       *boxView;
 
 @end
 
 @implementation ViewController
 
-- (FilterBoxViewMlodel *)ViewModel
-{
-    if (nil ==  _ViewModel) {
-        _ViewModel = [[FilterBoxViewMlodel alloc]init];
-    }
-    return _ViewModel;
-}
 
 
-- (FilterBoxView *)boxView
-{
-    if (nil == _boxView) {
-        _boxView = [[FilterBoxView alloc]init];
-    }
-    return _boxView;
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(clickResponse)];
-    [self clickResponse];
 }
 
 
 - (void)clickResponse
 {
-    
-    [self.ViewModel getModelFromLocal:@{@"paremeter":@"test"} andBlock:^(id x, NSError *error) {
-        NSLog(@"%@",x);
-    }];
+    NSURL *url = [NSURL URLWithString:
+                  @"cmbmobilebank://CMBLS/FunctionJump?action=gofuncid&funcid=200007&serverid= CMBEUserPay&cmb_app_trans_parms_start=here&…"];
+    if (![[UIApplication sharedApplication] canOpenURL:url]) {
+        //未安装手机银行
+        WebViewController *web = [[WebViewController alloc]init];
+        [self.navigationController pushViewController:web animated:YES];
+    } else {
+        //已安装手机银行
+    }
 }
 
 - (void)didReceiveMemoryWarning {
