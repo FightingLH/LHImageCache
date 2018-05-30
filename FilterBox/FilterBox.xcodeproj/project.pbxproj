@@ -92,6 +92,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		797BD40120BE3373002AEC40 /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				79801D8520AC0CA40008732B /* Controller */,
+				79801D8420AC0CA40008732B /* Model */,
+				79801D8720AC0CA40008732B /* View */,
+				79801D8620AC0CA40008732B /* ViewModel */,
+			);
+			path = Pay;
+			sourceTree = "<group>";
+		};
 		79801D4620AC0BD10008732B = {
 			isa = PBXGroup;
 			children = (
@@ -115,10 +126,7 @@
 		79801D5120AC0BD10008732B /* FilterBox */ = {
 			isa = PBXGroup;
 			children = (
-				79801D8520AC0CA40008732B /* Controller */,
-				79801D8420AC0CA40008732B /* Model */,
-				79801D8720AC0CA40008732B /* View */,
-				79801D8620AC0CA40008732B /* ViewModel */,
+				797BD40120BE3373002AEC40 /* Pay */,
 				79801D5220AC0BD10008732B /* AppDelegate.h */,
 				79801D5320AC0BD10008732B /* AppDelegate.m */,
 				79801D5520AC0BD10008732B /* ViewController.h */,
